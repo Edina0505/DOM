@@ -42,6 +42,21 @@ lista[1].style.color = "pink";*/
 console.log(paragraf.previousElementSibling);*/
 /*let paragraf = document.querySelector("#masodik p");
 console.log(paragraf.previousSibling.previousSibling);// kozte van a text*/
-console.log(document.getElementById("container"));
+/*console.log(document.getElementById("container"));
 let container = document.getElementById("container");
-container.children[2].style.backgroundColor = "green";
+container.children[2].style.backgroundColor = "green";*/
+
+/*let newDiv = document.createElement("div")eg"); // ezt rakjabe
+newDiv.appendChild(text);
+let container = document.getElementById("cont; //felette szoveg
+let text = document.createTextNode("uj szovainer");
+let firstH2 = document.querySelector(#container h2);
+
+container.insertBefore(newDiv, firstH2); */
+let newDiv = document.createElement("div"); // ezt rakjabe
+newDiv.appendChild(text);
+let masodik = document.getElementById("masodik"); //felette szoveg
+let text = document.createTextNode("uj szovainer");
+let firstH2 = document.querySelector("#masodik p");
+
+masodik.insertBefore(newDiv, firstH2);
