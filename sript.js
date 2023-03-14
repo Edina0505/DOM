@@ -53,10 +53,37 @@ let text = document.createTextNode("uj szovainer");
 let firstH2 = document.querySelector(#container h2);
 
 container.insertBefore(newDiv, firstH2); */
-let newDiv = document.createElement("div"); // ezt rakjabe
-newDiv.appendChild(text);
-let masodik = document.getElementById("masodik"); //felette szoveg
+/*let newDiv = document.createElement("div"); 
 let text = document.createTextNode("uj szovainer");
+
+newDiv.appendChild(text);
+let masodik = document.getElementById("masodik"); 
 let firstH2 = document.querySelector("#masodik p");
 
-masodik.insertBefore(newDiv, firstH2);
+masodik.insertBefore(newDiv, firstH2);*/
+
+/*let newList = document.createElement("li");
+let text = document.createTextNode("uj szovainer");
+
+newList.appendChild(text);
+let lista = document.getElementById("list");
+
+list.insertBefore(newList, lista.firstChild);*/
+//.lastChild.nextsibling az utan fogjs
+//ul.lastChild.nextSibling utolso testver lesz
+
+let textForm = document.getElementById("text");
+let button = document.getElementById("button");
+
+function addToList() {
+  let newList = document.createElement("li");
+  let text = document.createTextNode(textForm.value);
+
+  newList.appendChild(text);
+  let lista = document.getElementById("list");
+
+  list.insertBefore(newList, lista.lastChild.nextSibling);
+  textForm.value = "";
+}
+
+button.addEventListener("click", addToList);
